@@ -1,0 +1,444 @@
+html {
+    
+}
+
+@font-face {
+    font-family: "Tesla";
+    src: url("TESLA.ttf");
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-image: url(fff.png);
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5858718487394958) 70%, rgba(0,0,0,0) 100%);
+    height: 5vh;
+}
+
+.logot {
+    height: 100%;
+    width: auto;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    letter-spacing: 8px;
+}
+.logot h4 {
+    font-family: Tesla;
+    font-size: 20px;
+    font-weight: 100;
+    color: #FFF;
+    margin: auto 0;
+}
+
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 37.25%;
+    overflow: hidden;
+    max-height: 60vh;
+    max-width: 100vw;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Zov {
+    margin: 0;
+    background-color: #1F0E11;
+}
+
+.Cont {
+    width: 95vw;
+    margin: 0 auto;
+    padding: 10vh 0;
+    
+    text-align: center;
+    font-family: Tesla;
+}
+
+.DCont {
+    font-family: Jura;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px red;
+    font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.razbor {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    display: flex; /* Включаем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    margin-bottom: 50px;
+}
+
+
+.a1, .a2, .a3, .a4, .a5, .a6 {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    animation-play-state: paused;
+}
+
+.a1 {
+    z-index: 6;
+    animation: slideright1 2s;
+    padding-left: 100%;
+}
+.a2 {
+    padding-bottom: 45px;
+    z-index: 5;
+    animation: slideright2 2s;
+    padding-left: 60%;
+}
+.a3 {
+    z-index: 4;
+    animation: slideright3 2s;
+    padding-left: 20%;
+}
+.a4 {
+    z-index: 3;
+    animation: slideleft1 2s;
+    padding-right: 20%;
+}
+.a5 {
+    z-index: 2;
+    animation: slideleft2 2s;
+    padding-right: 60%;
+}
+.a6 {
+    z-index: 1;
+    animation: slideleft3 2s;
+    padding-right: 100%;
+}
+
+.krishka {
+    z-index: 3;
+    padding-right: 0px;
+    animation: slideleft 2s;
+    padding-right: 100%;
+}
+
+.vint {
+    z-index: 2;
+    height: 70%;
+    padding-top: 37px;
+    padding-left: 50px;
+}
+
+.zopa {
+    z-index: 1;
+    padding-left: 70px;
+    animation: slideright 2s;
+    padding-left: 100%;
+    
+}
+
+@keyframes slideleft1 {
+  from {
+    padding-right: 0;
+  }
+
+  to {
+    padding-right: 20%;
+  }
+}
+@keyframes slideleft2 {
+  from {
+    padding-right: 0;
+  }
+
+  to {
+    padding-right: 60%;
+  }
+}
+@keyframes slideleft3 {
+  from {
+    padding-right: 0;
+  }
+
+  to {
+    padding-right: 100%;
+  }
+}
+
+@keyframes slideright1 {
+  from {
+    padding-left: 0;
+  }
+
+  to {
+    padding-left: 100%;
+  }
+}
+@keyframes slideright2 {
+  from {
+    padding-left: 0;
+  }
+
+  to {
+    padding-left: 60%;
+  }
+}
+@keyframes slideright3 {
+  from {
+    padding-left: 0;
+  }
+
+  to {
+    padding-left: 20%;
+  }
+}
+
+
+.intro {
+    height: 100vh;
+    width: 30vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: center;
+}
+
+.text {
+    margin: auto 0;
+    text-align: right;
+    font-family: Tesla;
+}
+
+h1, h3 {
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 5px 5px 10px red;
+}
+
+h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.hh {
+    margin-top: 80px;
+}
+
+.text1, .text2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: white;
+    width: 23vw;
+    height: 40vh;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.text1 {
+    text-align: left;
+}
+.text11 {
+    padding-left: 5.6vw;
+}
+.text2 {
+    text-align: right;
+}
+.text22 {
+    padding-right: 5.6vw;
+}
+
+.verh {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 auto;
+    padding-top: 13vh;
+    margin-bottom: 11vh;
+}
+
+.niz {
+    text-align: left;
+    padding: 0 0;
+    color: #fff;
+    width: 88%;
+    margin: 0 auto;
+}
+.text3 {
+    
+}
+.text33 {
+    padding-top: 1vh;
+    padding-left: 5.7vw;
+    margin-bottom: 20px;
+}
+
+.component {
+    padding: 80px 80px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.componentDesc {
+    height: 100%;
+    width: 70%;
+}
+
+.componentDesc h1 {
+    text-shadow: 5px 5px 10px blue;
+    font-family: Tesla;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.componentDesc p {
+    line-height: 0.9;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    color: #EAE6CA;
+    text-shadow: 2px 2px 5px blue;
+    font-family: Jura;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.Cimg1 {
+    flex: 1;
+    background-image: url('comp/IR.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Cimg2 {
+    flex: 1;
+    background-image: url('comp/Avto.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Cimg3 {
+    flex: 1;
+    background-image: url('comp/Electronics.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.DevBlock {
+    background-color: #0A0A0A;
+    padding: 100px;
+}
+
+.DevBlock h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Tesla;
+    text-shadow: 5px 5px 10px  #8A2BE2;
+    color: #fff;
+}
+
+.contain {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 100px;
+    justify-content: space-between;
+}
+
+.Dev {
+    box-shadow: 1px 1px 8px  #8A2BE2;
+    border: solid 1px  #8A2BE2;
+    padding: 10px;
+    width: 30%;
+    height: auto;
+}
+
+.Dev img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.Dev h2 {
+    text-align: left;
+    color: #fff;
+    margin-top: 20px;
+    font-family: Tesla;
+    font-weight: 200;
+    text-shadow: 2px 2px 5px #8A2BE2;
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.Dev p {
+    font-family: Jura;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-weight: 600;
+}
+
+.end {
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+.end h1 {
+    font-family: Tesla;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+.end ul {
+    text-align: left;
+    font-family: Jura;
+    margin: 0 auto;
+}
